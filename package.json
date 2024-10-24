@@ -1,0 +1,16 @@
+{
+  "name": "shopping_list",
+  "version": "0.0.1",
+  "description": "A family shopping list manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-dev-server --open ./ --node-resolve",
+    "start:watch": "web-dev-server --open ./ --node-resolve --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Rosendorf",
+  "license": "MIT",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
