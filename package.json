@@ -12,5 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "@web/dev-server": "^0.4.6"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.18.0",
+    "htmx.org": "^2.0.3"
   }
 }
