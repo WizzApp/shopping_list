@@ -12,6 +12,7 @@
   "author": "Daniel Rosendorf",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "@web/dev-server": "^0.4.6",
     "@web/rollup-plugin-html": "^2.3.0",
     "@web/rollup-plugin-import-meta-assets": "^2.2.1"
