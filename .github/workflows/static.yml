@@ -33,12 +33,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.4.x
+          cache: "npm"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install packages
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Upload artifact
