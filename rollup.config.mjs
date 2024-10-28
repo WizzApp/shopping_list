@@ -8,6 +8,6 @@ export default {
   plugins: [
     html(),
     nodeResolve(),
-    copy({ patterns: "./assets/**/*.{svg,jpg,json}" }),
+    copy({ patterns: "./assets/**/*.{svg,jpg,json,png}" }),
   ],
 };
