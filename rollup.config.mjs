@@ -3,10 +3,10 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { copy } from "@web/rollup-plugin-copy";
 
 export default {
-  input: "index.html",
+  input: "**/*.html",
   output: { dir: "dist" },
   plugins: [
-    html(),
+    html({ rootDir: "pages", flattenOutput: false }),
     nodeResolve(),
     copy({ patterns: "./assets/**/*.{svg,jpg,json,png}" }),
   ],

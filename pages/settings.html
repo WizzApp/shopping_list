@@ -4,17 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="./node_modules/@shoelace-style/shoelace/dist/themes/light.css"
+      href="../node_modules/@shoelace-style/shoelace/dist/themes/light.css"
     />
-    <link rel="manifest" href="./assets/manifest.json" />
   </head>
   <body>
-    <script type="module" src="./node_modules/htmx.org/dist/htmx.js"></script>
-    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="../node_modules/htmx.org/dist/htmx.js"></script>
+    <script type="module" src="../src/index.js"></script>
     <sl-button variant="default" hx-on:click="alert('You clicked me!')">
       <sl-icon slot="prefix" name="link-45deg"></sl-icon>
       <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
-      Click me!
+      Click me again!
     </sl-button>
   </body>
 </html>

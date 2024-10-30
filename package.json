@@ -4,8 +4,7 @@
   "description": "A family shopping list manager",
   "main": "index.js",
   "scripts": {
-    "start": "web-dev-server --open ./ --node-resolve",
-    "start:watch": "web-dev-server --open ./ --node-resolve --watch",
+    "start": "web-dev-server --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.mjs"
   },
