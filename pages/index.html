@@ -1,21 +1,28 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/@shoelace-style/shoelace/dist/themes/light.css"
-    />
-    <link rel="manifest" href="../assets/manifest.json" />
-  </head>
-  <body>
-    <script type="module" src="../node_modules/htmx.org/dist/htmx.js"></script>
-    <script type="module" src="../src/index.js"></script>
-    <sl-button variant="default" hx-on:click="alert('You clicked me!')">
-      <sl-icon slot="prefix" name="link-45deg"></sl-icon>
-      <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
-      Click me!
-    </sl-button>
-    <a href="settings.html">Settings</a>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../node_modules/@shoelace-style/shoelace/dist/themes/light.css"
+		/>
+		<link rel="manifest" href="../assets/manifest.json" />
+		<link rel="stylesheet" href="../assets/style/base.css" />
+		<script type="module" src="../node_modules/htmx.org/dist/htmx.js"></script>
+		<title>Shopping list</title>
+	</head>
+	<body>
+		<script type="module">
+			import SlButton from "@shoelace-style/shoelace/dist/components/button/button.js";
+			import { waitForCustomElements } from "../src/init.js";
+
+			await waitForCustomElements("sl-button");
+		</script>
+		<sl-button variant="default" hx-on:click="alert('You clicked me!')">
+			<sl-icon slot="prefix" name="link-45deg"></sl-icon>
+			<sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+			Click me!
+		</sl-button>
+		<a href="settings.html">Settings</a>
+	</body>
 </html>
