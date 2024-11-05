@@ -44,7 +44,7 @@ jobs:
               ref: ref,
               auto_merge: false,
               required_contexts: [],
-              environment: context.ref === 'refs/heads/main' ? 'shopping-list (Production)' : 'shopping-list (Preview)',
+              environment: context.ref === 'refs/heads/main' ? 'Production' : 'Preview',
               production_environment: context.ref === 'refs/heads/main'
             })
             return result.data.id
@@ -55,7 +55,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               deployment_id: `${{ steps.createDeployment.outputs.result }}`,
-              environment: context.ref === 'refs/heads/main' ? 'shopping-list (Production)' : 'shopping-list (Preview)',
+              environment: context.ref === 'refs/heads/main' ? 'Production' : 'Preview',
               environment_url: `${{ steps.deploy.outputs.deployment-url }}`,
               state: 'success',
               auto_inactive: false
